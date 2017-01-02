@@ -5,12 +5,35 @@ require_once '../vendor/autoload.php';
 use Slim\Slim;
 
 $data = [
-    "inflatality" => [
-        "https://www.youtube.com/embed/cs0UsYf9XEQ" => "screenshot1-thumb.png",
-        "screenshot1-large.jpg" => "screenshot1-thumb.png",
-        "screenshot2-large.jpg" => "screenshot2-thumb.png",
-        "screenshot3-large.jpg" => "screenshot3-thumb.png",
-        "screenshot4-large.jpg" => "screenshot4-thumb.png",
+    'inflatality' => [
+        'portfolio' => [
+            'https://www.youtube.com/embed/cs0UsYf9XEQ' => 'inflatality-youtube-thumb.png',
+            'screenshot1-large.jpg' => 'screenshot1-thumb.png',
+            'screenshot2-large.jpg' => 'screenshot2-thumb.png',
+            'screenshot3-large.jpg' => 'screenshot3-thumb.png',
+            'screenshot4-large.jpg' => 'screenshot4-thumb.png',
+        ],
+        'description' => ''
+    ],
+    'catscape' => [
+        'portfolio' => [
+            'https://www.youtube.com/embed/6w1A4s_VLng' => 'catscape-youtube-thumb.png',
+            'screenshot1-large.png' => 'screenshot1-thumb.png',
+            'screenshot2-large.png' => 'screenshot2-thumb.png',
+            'screenshot3-large.png' => 'screenshot3-thumb.png',
+            'screenshot4-large.png' => 'screenshot4-thumb.png',
+        ],
+        'description' => ''
+    ],
+    'hotf' => [
+        'portfolio' => [
+            'https://www.youtube.com/embed/gCjd_n46_L4' => 'hotf-youtube-thumb.png',
+            'screenshot1-large.png' => 'screenshot1-thumb.png',
+            'screenshot2-large.png' => 'screenshot2-thumb.png',
+            'screenshot3-large.png' => 'screenshot3-thumb.png',
+            'screenshot4-large.png' => 'screenshot4-thumb.png',
+        ],
+        'description' => ''
     ]
 ];
 

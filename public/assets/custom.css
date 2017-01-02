@@ -12,19 +12,25 @@ a:hover {
     color: white;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
+/* Left and right padding for mobile */
 .header,
-.marketing,
+.portfolio-item ,
 .footer {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
 }
+
 /* Header */
 .header .logo {
     max-width: 500px;
 }
 
-/* Navigation */
+/* Portfolio */
+.portfolio-item {
+    background: #000;
+    padding: 1.5rem 0 0.5rem 0;
+    margin-bottom: 1.5rem;
+}
 .thumbnails .thumb {
     margin-bottom: 15px;
     cursor: pointer;

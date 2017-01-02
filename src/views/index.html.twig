@@ -3,24 +3,24 @@
 {% block content %}
 
     {% for name, details in data %}
-        <div class="row">
-            <div class="col-lg-1 thumbnails">
-                {% for key, thumb in details %}
+        <div class="row portfolio-item">
+            <div class="col-sm-1 thumbnails">
+                {% for key, thumb in details.portfolio %}
                     <div id="thumb-{{ name }}-{{ loop.index - 1 }}" class="thumb">
-                        <img src="assets/portfolio/{{ name }}/thumbs/{{ thumb }}" alt="">
+                        <img data-carousel-name="{{ name }}" src="assets/portfolio/{{ name }}/thumbs/{{ thumb }}" alt="">
                     </div>
                 {% endfor %}
             </div>
-            <div class="col-lg-6">
+            <div class="col-sm-7">
                 <div id="{{ name }}" class="carousel slide" data-ride="carousel">
                     {#<ol class="carousel-indicators">#}
-                        {#{% for key, thumb in details %}#}
+                        {#{% for key, thumb in details.portfolio %}#}
                         {#<li data-target="#{{ name }}" data-slide-to="{{ loop.index }}"#}
                                 {#{% if loop.first %} class="active" {% endif %}></li>#}
                         {#{% endfor %}#}
                     {#</ol>#}
                     <div class="carousel-inner" role="listbox">
-                        {% for key, thumb in details %}
+                        {% for key, thumb in details.portfolio %}
                             <div class="carousel-item {% if loop.first %} active {% endif %}">
                                 {% if loop.first %}
                                     <iframe id="youtube-{{ name }}-{{ loop.index }}" width="100%" height="300px" src="{{ key }}" frameborder="0" allowfullscreen></iframe>
@@ -40,7 +40,7 @@
                     {#</a>#}
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-sm-4">
                 <h4>Subheading</h4>
                 <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
                 <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet
