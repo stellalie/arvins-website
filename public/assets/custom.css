@@ -1,0 +1,56 @@
+/* Space out content a bit */
+body {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: #102b38;
+    color: white;
+}
+a {
+    color: white;
+}
+a:hover {
+    color: white;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+/* Header */
+.header .logo {
+    max-width: 500px;
+}
+
+/* Navigation */
+.thumbnails .thumb {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.thumbnails .thumb:hover {
+    border: 2px solid white;
+}
+.thumbnails .thumb img {
+    width: 100%;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 48em) {
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 2rem;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
