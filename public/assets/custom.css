@@ -11,52 +11,76 @@ a {
 a:hover {
     color: white;
 }
-
-/* Left and right padding for mobile */
-.header,
-.portfolio-item ,
-.footer {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+.container-wrapper {
+    width: 1350px;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Header */
+.header {
+    margin-bottom: 2rem;
+}
 .header .logo {
     max-width: 500px;
 }
+.header .nav {
+    margin-top: 30px;
+}
+.header .nav-item a {
+    font-size: 20px;
+    color: white;
+}
+.header .nav-item a:active {
+    color: white;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    text-align: right;
+}
 
 /* Portfolio */
-.portfolio-item {
-    background: #000;
-    padding: 1.5rem 0 0.5rem 0;
-    margin-bottom: 1.5rem;
+.thumbnails-wrapper,
+.carousel-wrapper,
+.description-wrapper {
+    display: block;
+    float: left;
 }
-.thumbnails .thumb {
+.thumbnails-wrapper {
+    width: 120px;
+    margin-left: 1rem;
+}
+.carousel-wrapper {
+    margin-left: 1rem;
+    width: 720px;
+}
+.description-wrapper {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 435px;
+}
+.portfolio-item {
+    height: 435px;
+    background: #000;
+    padding: 1rem 0 1rem 0;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+.thumbnails-wrapper .thumb {
     margin-bottom: 15px;
     cursor: pointer;
 }
-.thumbnails .thumb:hover {
+.thumbnails-wrapper .thumb:last-child {
+    margin-bottom: 0;
+}
+.thumbnails-wrapper .thumb img {
+    border: 2px solid black;
+}
+.thumbnails-wrapper .thumb:hover img {
     border: 2px solid white;
-}
-.thumbnails .thumb img {
-    width: 100%;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 48em) {
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 2rem;
-    }
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
 }

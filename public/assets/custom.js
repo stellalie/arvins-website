@@ -13,11 +13,12 @@ jQuery(document).ready(function($) {
         $('#' + carouselName).carousel(parseInt(id));
 
         // Stop all youtube videos on click
-        var videos = $('[id^=youtube-]');
-        videos.each(function () {
-            var url = $(this).attr('src');
-            $(this).attr('src', '');
-            $(this).attr('src', url);
-        });
+        // TODO: Don't know why keep flicking
+        // var videos = $('[id^=youtube-]');
+        // videos.each(function () {
+        //     var url = $(this).attr('src');
+        //     $(this).attr('src', '');
+        //     $(this).attr('src', url);
+        // });
     });
 });

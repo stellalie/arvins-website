@@ -13,7 +13,6 @@ $data = [
             'screenshot3-large.jpg' => 'screenshot3-thumb.png',
             'screenshot4-large.jpg' => 'screenshot4-thumb.png',
         ],
-        'description' => ''
     ],
     'catscape' => [
         'portfolio' => [
@@ -23,7 +22,6 @@ $data = [
             'screenshot3-large.png' => 'screenshot3-thumb.png',
             'screenshot4-large.png' => 'screenshot4-thumb.png',
         ],
-        'description' => ''
     ],
     'hotf' => [
         'portfolio' => [
@@ -33,15 +31,29 @@ $data = [
             'screenshot3-large.png' => 'screenshot3-thumb.png',
             'screenshot4-large.png' => 'screenshot4-thumb.png',
         ],
-        'description' => ''
+    ],
+    'monstergotchi' => [
+        'portfolio' => [
+            'https://www.youtube.com/embed/zzMJdFnt7DY' => 'monstergotchi-youtube-thumb.png',
+            'screenshot1-large.png' => 'screenshot1-thumb.png',
+            'screenshot2-large.jpg' => 'screenshot2-thumb.png',
+            'screenshot3-large.png' => 'screenshot3-thumb.png',
+            'screenshot4-large.png' => 'screenshot4-thumb.png',
+        ],
     ]
 ];
 
 $app = new Slim();
 $app->get('/', function () use ($app, $data) {
+    // Prepare Twig
     Twig_Autoloader::register();
     $loader = new Twig_Loader_Filesystem(__DIR__ . '/views');
     $twig = new Twig_Environment($loader);
+    // Render the descriptions
+    foreach ($data as $key => &$details) {
+        $details['description'] = $twig->render('descriptions/' . $key . '.html.twig');
+    }
+    // Render the index page
     echo $twig->render(
         'index.html.twig',
         ['data' => $data]
