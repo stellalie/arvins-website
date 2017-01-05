@@ -8,5 +8,9 @@
     "psr-0": {
       "": ""
     }
-  }
+  },
+"config": {
+        "disable-tls": true,
+        "secure-http": false
+    }
 }

@@ -40,7 +40,16 @@ $data = [
             'screenshot3-large.png' => 'screenshot3-thumb.png',
             'screenshot4-large.png' => 'screenshot4-thumb.png',
         ],
-    ]
+    ],
+    'psycopath' => [
+        'portfolio' => [
+            'https://www.youtube.com/embed/uozZ0vvY9zg' => 'psycopath-youtube-thumb.png',
+            'screenshot1-large.png' => 'screenshot1-thumb.png',
+            'screenshot2-large.png' => 'screenshot2-thumb.png',
+            'screenshot3-large.png' => 'screenshot3-thumb.png',
+            'screenshot4-large.png' => 'screenshot4-thumb.png',
+        ],
+    ],
 ];
 
 $app = new Slim();
