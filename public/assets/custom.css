@@ -81,7 +81,7 @@ a:visited {
 }
 .portfolio-item {
     height: 435px;
-    background: #000;
+    background: #0D1520;
     padding: 1rem 0 1rem 0;
     margin-bottom: 1.5rem;
     overflow: hidden;
@@ -103,6 +103,8 @@ a:visited {
 /* About Me */
 .about {
     margin-top: 60px;
+    background: #0A0C15;
+    padding: 2rem;
 }
 .about h2 {
     border-bottom: 3px solid white;
