@@ -99,3 +99,14 @@ a:visited {
 .thumbnails-wrapper .thumb:hover img {
     border: 2px solid white;
 }
+
+/* About Me */
+.about {
+    margin-top: 60px;
+}
+.about h2 {
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 400px;
+}
