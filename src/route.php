@@ -7,7 +7,7 @@ use Slim\Slim;
 $data = [
     'inflatality' => [
         'portfolio' => [
-            'https://www.youtube.com/embed/cs0UsYf9XEQ' => 'inflatality-youtube-thumb.png',
+            'https://www.youtube.com/embed/Z3UvhXilpPY' => 'inflatality-youtube-thumb.png',
             'screenshot1-large.jpg' => 'screenshot1-thumb.png',
             'screenshot2-large.jpg' => 'screenshot2-thumb.png',
             'screenshot3-large.jpg' => 'screenshot3-thumb.png',
