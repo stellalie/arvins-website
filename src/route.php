@@ -14,6 +14,15 @@ $data = [
             'screenshot4-large.jpg' => 'screenshot4-thumb.png',
         ],
     ],
+    'shootyballz' => [
+        'portfolio' => [
+            'https://www.youtube.com/embed/FiqoYaXU1W8' => 'youtube-thumb.png',
+            'Screenshot1.jpg' => 'Screenshot1-thumb.jpg',
+            'Screenshot2.jpg' => 'Screenshot2-thumb.jpg',
+            'Screenshot3.png' => 'Screenshot3-thumb.png',
+            'Screenshot4.png' => 'Screenshot4-thumb.png',
+        ],
+    ],
     'catscape' => [
         'portfolio' => [
             'https://www.youtube.com/embed/zRuFa8wdIno' => 'catscape-youtube-thumb.png',
