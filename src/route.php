@@ -77,7 +77,7 @@ $app->get('/', function () use ($app, $released, $gamejams) {
     $loader = new Twig_Loader_Filesystem(__DIR__ . '/views');
     $twig = new Twig_Environment($loader);
     // Render the descriptions
-    foreach ($gamejams as $key => &$details) {
+    foreach ($released as $key => &$details) {
         $details['description'] = $twig->render('descriptions/' . $key . '.html.twig');
     }
     // Render the index page

@@ -61,8 +61,11 @@ a:visited {
 .thumbnails-wrapper,
 .carousel-wrapper,
 .description-wrapper {
-    display: block;
     float: left;
+}
+.gamejam-thumb
+{
+    width:200px;
 }
 .thumbnails-wrapper {
     width: 120px;
