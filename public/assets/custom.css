@@ -20,7 +20,10 @@ a:link {
 a:visited {
     color: #7b77ff !important;
 }
-
+.title {
+    border-bottom: 1px solid white;
+    margin-bottom: 1em;
+}
 .container-wrapper {
     width: 1350px;
     padding: 20px;
@@ -75,12 +78,19 @@ a:visited {
     width: 435px;
 }
 .description-wrapper h2 {
-    border-bottom: 3px solid white;
+    border-bottom: 1px solid white;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 .portfolio-item {
     height: 435px;
+    background: #0D1520;
+    padding: 1rem 0 1rem 0;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+.gamejam-item {
+    height: 200px;
     background: #0D1520;
     padding: 1rem 0 1rem 0;
     margin-bottom: 1.5rem;

@@ -1,8 +1,10 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-
-    {% for name, details in data %}
+    <div class="row title">
+        <h1><b>Commercial Titles</b></h1>
+    </div>
+    {% for name, details in released %}
         <div class="row portfolio-item">
             <div class="thumbnails-wrapper">
                 {% for key, thumb in details.portfolio %}
@@ -45,6 +47,16 @@
             </div>
         </div>
     {% endfor %}
+    <div class="row title">
+        <h1><b>Jam Games</b></h1>
+    </div>
+    {% for name, details in gamejams %}
+        <p>{{name}}</p>
+        {% for key, thumb in details.portfolio %}
+            <img src="assets/portfolio/{{ name }}/thumbs/{{ thumb }}" alt="" />
+        {% endfor %}
+    {% endfor %}
+
 
     <div id="about-me" class="row about">
         <h2>About Me</h2>
