@@ -53,20 +53,68 @@ $released = [
 ];
 
 $gamejams = [
+    'shootyballz' => [
+        'portfolio' => [
+            'screenshot1-large.gif' => 'screenshot1-thumb.gif',
+        ],
+        'link' => 'https://arvz.itch.io/shooty-ballz',
+        'title' => 'Shooty Ballz'
+    ],
+    'tangerine' => [
+            'portfolio' => [
+                'screenshot1-large.gif' => 'screenshot1-thumb.gif',
+            ],
+            'link' => 'https://arvz.itch.io/tangerino',
+            'title' => 'Tangerine Massacre'
+        ],
+    'spms2077' => [
+                'portfolio' => [
+                    'screenshot1-large.gif' => 'screenshot1-thumb.gif',
+                ],
+                'link' => 'https://arvz.itch.io/spaceship2077',
+                'title' => 'Spaceship Power Management Simulator 2077'
+            ],
+    'kcf' => [
+                'portfolio' => [
+                    'screenshot1-large.gif' => 'screenshot1-thumb.png',
+                ],
+                'link' => 'https://globalgamejam.org/2022/games/kfc-krazy-frickin-chicken-7',
+                'title' => 'Krazy Chicken Frenzy'
+            ],
+     'poseidoom' => [
+                 'portfolio' => [
+                     'screenshot1-large.gif' => 'screenshot1-thumb.jpg',
+                 ],
+                 'link' => 'https://globalgamejam.org/2017/games/poseidoom',
+                 'title' => 'Poseidoom'
+             ],
+    'godofchance' => [
+            'portfolio' => [
+                'screenshot1-large.gif' => 'screenshot1-thumb.jpg',
+            ],
+            'link' => 'https://arvz.itch.io/god-of-chance',
+            'title' => 'God of Chance'
+        ],
     'hotf' => [
         'portfolio' => [
             'screenshot1-large.png' => 'screenshot1-thumb.png',
         ],
+        'link' => '',
+        'title' => 'Heart of the Forest'
     ],
     'monstergotchi' => [
         'portfolio' => [
             'screenshot1-large.png' => 'screenshot1-thumb.png',
         ],
+        'link' => 'https://globalgamejam.org/2016/games/monstergotchi',
+        'title' => 'Monstergotchi'
     ],
     'psycopath' => [
         'portfolio' => [
             'screenshot1-large.png' => 'screenshot1-thumb.png',
         ],
+        'link' => 'https://globalgamejam.org/2014/games/psyco-path',
+        'title' => 'Psycopath'
     ],
 ];
 

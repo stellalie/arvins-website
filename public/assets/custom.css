@@ -113,6 +113,48 @@ a:visited {
     border: 2px solid white;
 }
 
+/* Horizontal Thumbnails */
+.thumbnails-wrapper-horizontal {
+}
+.thumbnails-wrapper-horizontal .thumb {
+    display: block;
+    float: left;
+    /* container for the text */
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 0 5px;
+}
+.thumbnails-wrapper-horizontal .thumb a {
+    display: block;
+    height: 115px;
+}
+.thumbnails-wrapper-horizontal .thumb img {
+    width: 180px;
+}
+.thumbnails-wrapper-horizontal .thumb:hover img {
+    /*border: 2px solid white;*/
+    opacity: 0.5;
+}
+.thumbnails-wrapper-horizontal .thumb:hover .gamejam-title {
+    visibility: visible;
+    text-underline: none;
+}
+
+.thumbnails-wrapper-horizontal .thumb .gamejam-title {
+    position: relative;
+    text-align: center;
+    color: white;
+    visibility: hidden;
+    top: -80px;
+    width: 180px;
+    /* text */
+    font-size: smaller;
+    vertical-align: middle;
+    display: table-cell;
+    height: 60px;
+}
+
 /* About Me */
 .about {
     margin-top: 60px;
