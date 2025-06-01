@@ -5,9 +5,26 @@ require_once '../vendor/autoload.php';
 use Slim\Slim;
 
 $released = [
+    'koala' => [
+        'portfolio' => [
+            'screenshot1-large.jpg' => 'screenshot1-thumb.jpg',
+            'screenshot2-large.jpg' => 'screenshot2-thumb.jpg',
+            'screenshot3-large.jpg' => 'screenshot3-thumb.jpg',
+            'screenshot4-large.jpg' => 'screenshot4-thumb.jpg',
+        ],
+    ],
+    'nowayhome' => [
+        'portfolio' => [
+            'https://www.youtube.com/embed/BkDcQbbdaVo' => 'nowayhome-youtube-thumb.png',
+            'screenshot1-large.jpg' => 'screenshot1-thumb.jpg',
+            'screenshot2-large.jpg' => 'screenshot2-thumb.jpg',
+            'screenshot3-large.jpg' => 'screenshot3-thumb.jpg',
+            'screenshot4-large.jpg' => 'screenshot4-thumb.jpg',
+        ],
+    ],
     'topplepop' => [
         'portfolio' => [
-            'https://www.youtube.com/embed/AJ24FYkqXjg' => 'topplepop-youtube-thumb.png',
+            'https://www.youtube.com/embed/eSeksWr9JHs' => 'topplepop-youtube-thumb.png',
             'screenshot1-large.jpg' => 'screenshot1-thumb.jpg',
             'screenshot2-large.jpg' => 'screenshot2-thumb.jpg',
             'screenshot3-large.jpg' => 'screenshot3-thumb.jpg',
@@ -23,7 +40,7 @@ $released = [
             'screenshot4-large.jpg' => 'screenshot4-thumb.png',
         ],
     ],
-    'RoyalABC' => [
+    'royalabc' => [
         'portfolio' => [
             'https://www.youtube.com/embed/krkyxlik1bg' => 'royalabc-youtube-thumb.jpg',
             'screenshot1-large.jpg' => 'screenshot1-thumb.jpg',
@@ -53,6 +70,13 @@ $released = [
 ];
 
 $gamejams = [
+    'driveytruckz' => [
+        'portfolio' => [
+            'screenshot1-thumb.jpg' => 'screenshot1-thumb.jpg',
+        ],
+        'link' => 'https://arvz.itch.io/drivey-truckz-scale-of-the-mountain',
+        'title' => 'Drivey Truckz'
+    ],
     'shootyballz' => [
         'portfolio' => [
             'screenshot1-large.gif' => 'screenshot1-thumb.gif',

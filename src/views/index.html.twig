@@ -24,7 +24,7 @@
                     <div class="carousel-inner" role="listbox">
                         {% for key, thumb in details.portfolio %}
                             <div class="carousel-item {% if loop.first %} active {% endif %}">
-                                {% if loop.first %}
+                                {% if loop.first and name != 'koala'%}
                                     <iframe id="youtube-{{ name }}-{{ loop.index }}" width="100%" height="402" src="{{ key }}" frameborder="0" allowfullscreen></iframe>
                                 {% else %}
                                     <img src="assets/portfolio/{{ name }}/screenshots/{{ key }}" alt="">
@@ -68,13 +68,16 @@
     <div id="about-me" class="row about">
         <h2>About Me</h2>
         <p>
-            Hey there! I'm a Unity and C# game developer who lives and breathes video games. I've been at it since 2014 and have released a bunch of titles across PC, mobile, and the Nintendo Switch. I've been using Unity since the early days, like version 3.0, and have been following its development closely ever since. This means I know the ins and outs of the engine and can adapt to any development scenario.
+            Hey there! I'm a Unity and C# game developer who lives and breathes video games. Based in Sydney, Australia, I've been at it since 2013 and have released a bunch of titles across PC, mobile, and the Nintendo Switch, and have participated in  
+            many game jams. I've been using Unity since the early days, like version 3.0, and have been following its development closely ever since. This means I know the ins and outs of the engine and can adapt to any development scenario.
         </p>
         <p>
-            In addition to my game dev skills, I have a particular interest for writing editor tools and making the development process as smooth as possible. I love streamlining workflows, making things more efficient and user-friendly, and finding ways to automate repetitive tasks. This means I can not only improve the development process but also help my team members focus on the fun and creative parts of game development.
+            In addition to my game dev skills, I have a particular interest for writing editor tools and making the development process as smooth as possible. I love streamlining workflows, making things more efficient and user-friendly, 
+            and finding ways to automate repetitive tasks. This means I can not only improve the development process but also help my team members focus on the fun and creative parts of game development. I've got some skills in other parts of game dev too - 
+            I'm pretty handy with Photoshop, and know my around Blender. 
         </p>
         <p>
-            My favourite game genre is JRPGs! Some of my all-time faves include Xenogears, The Witcher 3, the Mass Effect series, and the Legend of Heroes series. These games have had a big impact on my love for game development and continue to inspire me in my work as a developer.
+            My favourite game genre is JRPGs, Some of my all-time faves include Xenogears, The Witcher 3, the Mass Effect series, and the Legend of Heroes series, but I also love a variety of other genres like Strategy and Metroidvania.
         </p>
     </div>
 
