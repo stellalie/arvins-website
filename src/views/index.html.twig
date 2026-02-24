@@ -1,85 +1,95 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-    <div class="row title">
-        <h1><b>Commercial Titles</b></h1>
+<div class="row title">
+    <h1><b>Commercial Titles</b></h1>
+</div>
+{% for name, details in released %}
+<div class="row portfolio-item">
+    <div class="thumbnails-wrapper">
+        {% for key, thumb in details.portfolio %}
+        <div id="thumb-{{ name }}-{{ loop.index - 1 }}" class="thumb">
+            <img data-carousel-name="{{ name }}" src="assets/portfolio/{{ name }}/thumbs/{{ thumb }}" alt="">
+        </div>
+        {% endfor %}
     </div>
-    {% for name, details in released %}
-        <div class="row portfolio-item">
-            <div class="thumbnails-wrapper">
+    <div class="carousel-wrapper">
+        <div id="{{ name }}" class="carousel slide" data-ride="carousel">
+            {#<ol class="carousel-indicators">#}
+                {#{% for key, thumb in details.portfolio %}#}
+                {#<li data-target="#{{ name }}" data-slide-to="{{ loop.index }}" #} {#{% if loop.first %} class="active"
+                    {% endif %}></li>#}
+                {#{% endfor %}#}
+                {#</ol>#}
+            <div class="carousel-inner" role="listbox">
                 {% for key, thumb in details.portfolio %}
-                    <div id="thumb-{{ name }}-{{ loop.index - 1 }}" class="thumb">
-                        <img data-carousel-name="{{ name }}" src="assets/portfolio/{{ name }}/thumbs/{{ thumb }}" alt="">
-                    </div>
-                {% endfor %}
-            </div>
-            <div class="carousel-wrapper">
-                <div id="{{ name }}" class="carousel slide" data-ride="carousel">
-                    {#<ol class="carousel-indicators">#}
-                        {#{% for key, thumb in details.portfolio %}#}
-                        {#<li data-target="#{{ name }}" data-slide-to="{{ loop.index }}"#}
-                                {#{% if loop.first %} class="active" {% endif %}></li>#}
-                        {#{% endfor %}#}
-                    {#</ol>#}
-                    <div class="carousel-inner" role="listbox">
-                        {% for key, thumb in details.portfolio %}
-                            <div class="carousel-item {% if loop.first %} active {% endif %}">
-                                {% if loop.first and name != 'koala'%}
-                                    <iframe id="youtube-{{ name }}-{{ loop.index }}" width="100%" height="402" src="{{ key }}" frameborder="0" allowfullscreen></iframe>
-                                {% else %}
-                                    <img src="assets/portfolio/{{ name }}/screenshots/{{ key }}" alt="">
-                                {% endif %}
-                            </div>
-                        {% endfor %}
-                    </div>
-                    {#<a class="left carousel-control" href="#{{ name }}" role="button" data-slide="prev">#}
-                        {#<span class="icon-prev" aria-hidden="true"></span>#}
-                        {#<span class="sr-only">Previous</span>#}
-                    {#</a>#}
-                    {#<a class="right carousel-control" href="#{{ name }}" role="button" data-slide="next">#}
-                        {#<span class="icon-next" aria-hidden="true"></span>#}
-                        {#<span class="sr-only">Next</span>#}
-                    {#</a>#}
+                <div class="carousel-item {% if loop.first %} active {% endif %}">
+                    {% if 'embed' in key %}
+                    <iframe id="youtube-{{ name }}-{{ loop.index }}" width="100%" height="402" src="{{ key }}"
+                        frameborder="0" allowfullscreen></iframe>
+                    {% else %}
+                    <img src="assets/portfolio/{{ name }}/screenshots/{{ key }}" alt="">
+                    {% endif %}
                 </div>
-            </div>
-            <div class="description-wrapper">
-                {{ details.description|raw }}
-            </div>
-        </div>
-    {% endfor %}
-    <div class="row title">
-        <h1><b>Jam Games</b></h1>
-    </div>
-    <div class="row">
-        <div class="thumbnails-wrapper-horizontal">
-            {% for name, details in gamejams %}
-                {% for key, thumb in details.portfolio %}
-                    <div id="thumb-{{ name }}-{{ loop.index - 1 }}" class="thumb col-sm">
-                        <a href="{{ details.link }}">
-                            <img class="gamejam-thumb" src="assets/portfolio/{{ name }}/thumbs/{{ thumb }}" alt="" />
-                            <div class="gamejam-title">{{ details.title }}</div>
-                        </a>
-                    </div>
                 {% endfor %}
-            {% endfor %}
+            </div>
+            {#<a class="left carousel-control" href="#{{ name }}" role="button" data-slide="prev">#}
+                {#<span class="icon-prev" aria-hidden="true"></span>#}
+                {#<span class="sr-only">Previous</span>#}
+                {#</a>#}
+            {#<a class="right carousel-control" href="#{{ name }}" role="button" data-slide="next">#}
+                {#<span class="icon-next" aria-hidden="true"></span>#}
+                {#<span class="sr-only">Next</span>#}
+                {#</a>#}
         </div>
     </div>
-
-    <div id="about-me" class="row about">
-        <h2>About Me</h2>
-        <p>
-            Hey there! I'm a Unity and C# game developer who lives and breathes video games. Based in Sydney, Australia, I've been at it since 2013 and have released a bunch of titles across PC, mobile, and the Nintendo Switch, and have participated in  
-            many game jams. I've been using Unity since the early days, like version 3.0, and have been following its development closely ever since. This means I know the ins and outs of the engine and can adapt to any development scenario.
-        </p>
-        <p>
-            In addition to my game dev skills, I have a particular interest for writing editor tools and making the development process as smooth as possible. I love streamlining workflows, making things more efficient and user-friendly, 
-            and finding ways to automate repetitive tasks. This means I can not only improve the development process but also help my team members focus on the fun and creative parts of game development. I've got some skills in other parts of game dev too - 
-            I'm pretty handy with Photoshop, and know my around Blender. 
-        </p>
-        <p>
-            My favourite game genre is JRPGs, Some of my all-time faves include Xenogears, The Witcher 3, the Mass Effect series, and the Legend of Heroes series, but I also love a variety of other genres like Strategy and Metroidvania.
-        </p>
+    <div class="description-wrapper">
+        {{ details.description|raw }}
     </div>
+</div>
+{% endfor %}
+<div class="row title">
+    <h1><b>Jam Games</b></h1>
+</div>
+<div class="row">
+    <div class="thumbnails-wrapper-horizontal">
+        {% for name, details in gamejams %}
+        {% for key, thumb in details.portfolio %}
+        <div id="thumb-{{ name }}-{{ loop.index - 1 }}" class="thumb col-sm">
+            <a href="{{ details.link }}">
+                <img class="gamejam-thumb" src="assets/portfolio/{{ name }}/thumbs/{{ thumb }}" alt="" />
+                <div class="gamejam-title">{{ details.title }}</div>
+            </a>
+        </div>
+        {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+
+<div id="about-me" class="row about">
+    <h2>About Me</h2>
+    <p>
+        Hey there! I'm a Unity and C# game developer who lives and breathes video games. Based in Sydney, Australia,
+        I've been at it since 2013 and have released a bunch of titles across PC, mobile, and the Nintendo Switch, and
+        have participated in
+        many game jams. I've been using Unity since the early days, like version 3.0, and have been following its
+        development closely ever since. This means I know the ins and outs of the engine and can adapt to any
+        development scenario.
+    </p>
+    <p>
+        In addition to my game dev skills, I have a particular interest for writing editor tools and making the
+        development process as smooth as possible. I love streamlining workflows, making things more efficient and
+        user-friendly,
+        and finding ways to automate repetitive tasks. This means I can not only improve the development process but
+        also help my team members focus on the fun and creative parts of game development. I've got some skills in other
+        parts of game dev too -
+        I'm pretty handy with Photoshop, and know my around Blender.
+    </p>
+    <p>
+        My favourite game genre is JRPGs, Some of my all-time faves include Xenogears, The Witcher 3, the Mass Effect
+        series, and the Legend of Heroes series, but I also love a variety of other genres like Strategy and
+        Metroidvania.
+    </p>
+</div>
 
 {% endblock %}
-

@@ -7,6 +7,7 @@ use Slim\Slim;
 $released = [
     'koala' => [
         'portfolio' => [
+            'https://www.youtube.com/embed/A2PgTclraWk' => 'youtube-thumb.jpg',
             'screenshot1-large.jpg' => 'screenshot1-thumb.jpg',
             'screenshot2-large.jpg' => 'screenshot2-thumb.jpg',
             'screenshot3-large.jpg' => 'screenshot3-thumb.jpg',
@@ -15,7 +16,7 @@ $released = [
     ],
     'nowayhome' => [
         'portfolio' => [
-            'https://www.youtube.com/embed/BkDcQbbdaVo' => 'nowayhome-youtube-thumb.png',
+            'https://www.youtube.com/embed/BkDcQbbdaVo' => 'youtube-thumb.png',
             'screenshot1-large.jpg' => 'screenshot1-thumb.jpg',
             'screenshot2-large.jpg' => 'screenshot2-thumb.jpg',
             'screenshot3-large.jpg' => 'screenshot3-thumb.jpg',
@@ -24,7 +25,7 @@ $released = [
     ],
     'topplepop' => [
         'portfolio' => [
-            'https://www.youtube.com/embed/eSeksWr9JHs' => 'topplepop-youtube-thumb.png',
+            'https://www.youtube.com/embed/eSeksWr9JHs' => 'youtube-thumb.png',
             'screenshot1-large.jpg' => 'screenshot1-thumb.jpg',
             'screenshot2-large.jpg' => 'screenshot2-thumb.jpg',
             'screenshot3-large.jpg' => 'screenshot3-thumb.jpg',
@@ -33,16 +34,16 @@ $released = [
     ],
     'inflatality' => [
         'portfolio' => [
-            'https://www.youtube.com/embed/cs0UsYf9XEQ' => 'inflatality-youtube-thumb.png',
-            'screenshot1-large.jpg' => 'screenshot1-thumb.png',
-            'screenshot2-large.jpg' => 'screenshot2-thumb.png',
-            'screenshot3-large.jpg' => 'screenshot3-thumb.png',
-            'screenshot4-large.jpg' => 'screenshot4-thumb.png',
+            'https://www.youtube.com/embed/cs0UsYf9XEQ' => 'youtube-thumb.png',
+            'screenshot1-large.jpg' => 'screenshot1-thumb.jpg',
+            'screenshot2-large.jpg' => 'screenshot2-thumb.jpg',
+            'screenshot3-large.jpg' => 'screenshot3-thumb.jpg',
+            'screenshot4-large.jpg' => 'screenshot4-thumb.jpg',
         ],
     ],
     'royalabc' => [
         'portfolio' => [
-            'https://www.youtube.com/embed/krkyxlik1bg' => 'royalabc-youtube-thumb.jpg',
+            'https://www.youtube.com/embed/krkyxlik1bg' => 'youtube-thumb.jpg',
             'screenshot1-large.jpg' => 'screenshot1-thumb.jpg',
             'screenshot2-large.jpg' => 'screenshot2-thumb.jpg',
             'screenshot3-large.jpg' => 'screenshot3-thumb.jpg',
@@ -51,20 +52,38 @@ $released = [
     ],
     'readysetgolf' => [
         'portfolio' => [
-            'https://www.youtube.com/embed/6FOHZIvlilM' => 'readysetgolf-youtube-thumb.png',
+            'https://www.youtube.com/embed/6FOHZIvlilM' => 'youtube-thumb.jpg',
+            'https://www.youtube.com/embed/0vzrmN6Dy2Q' => 'youtube-thumb2.jpg',
+            'screenshot1-large.jpg' => 'screenshot1-thumb.jpg',
+            'screenshot2-large.jpg' => 'screenshot2-thumb.jpg',
+            'screenshot3-large.jpg' => 'screenshot3-thumb.jpg',
+        ],
+    ],
+    'catscape' => [
+        'portfolio' => [
+            'https://www.youtube.com/embed/zRuFa8wdIno' => 'youtube-thumb.png',
             'screenshot1-large.png' => 'screenshot1-thumb.png',
             'screenshot2-large.png' => 'screenshot2-thumb.png',
             'screenshot3-large.png' => 'screenshot3-thumb.png',
             'screenshot4-large.png' => 'screenshot4-thumb.png',
         ],
     ],
-    'catscape' => [
+    'chicktionary' => [
         'portfolio' => [
-            'https://www.youtube.com/embed/zRuFa8wdIno' => 'catscape-youtube-thumb.png',
-            'screenshot1-large.png' => 'screenshot1-thumb.png',
-            'screenshot2-large.png' => 'screenshot2-thumb.png',
-            'screenshot3-large.png' => 'screenshot3-thumb.png',
-            'screenshot4-large.png' => 'screenshot4-thumb.png',
+            'screenshot1-large.jpg' => 'screenshot1-thumb.jpg',
+            'screenshot2-large.jpg' => 'screenshot2-thumb.jpg',
+            'screenshot3-large.jpg' => 'screenshot3-thumb.jpg',
+            'screenshot4-large.jpg' => 'screenshot4-thumb.jpg',
+            'screenshot5-large.jpg' => 'screenshot5-thumb.jpg',
+        ],
+    ],
+    'deathsquared' => [
+        'portfolio' => [
+            'https://www.youtube.com/embed/FCOKAek1wB4' => 'youtube-thumb.jpg',
+            'screenshot1-large.jpg' => 'screenshot1-thumb.jpg',
+            'screenshot2-large.jpg' => 'screenshot2-thumb.jpg',
+            'screenshot3-large.jpg' => 'screenshot3-thumb.jpg',
+            'screenshot4-large.jpg' => 'screenshot4-thumb.jpg',
         ],
     ],
 ];
@@ -85,40 +104,40 @@ $gamejams = [
         'title' => 'Shooty Ballz'
     ],
     'tangerine' => [
-            'portfolio' => [
-                'screenshot1-large.gif' => 'screenshot1-thumb.gif',
-            ],
-            'link' => 'https://arvz.itch.io/tangerino',
-            'title' => 'Tangerine Massacre'
+        'portfolio' => [
+            'screenshot1-large.gif' => 'screenshot1-thumb.gif',
         ],
+        'link' => 'https://arvz.itch.io/tangerino',
+        'title' => 'Tangerine Massacre'
+    ],
     'spms2077' => [
-                'portfolio' => [
-                    'screenshot1-large.gif' => 'screenshot1-thumb.gif',
-                ],
-                'link' => 'https://arvz.itch.io/spaceship2077',
-                'title' => 'Spaceship Power Management Simulator 2077'
-            ],
-    'kcf' => [
-                'portfolio' => [
-                    'screenshot1-large.gif' => 'screenshot1-thumb.png',
-                ],
-                'link' => 'https://globalgamejam.org/2022/games/kfc-krazy-frickin-chicken-7',
-                'title' => 'Krazy Chicken Frenzy'
-            ],
-     'poseidoom' => [
-                 'portfolio' => [
-                     'screenshot1-large.gif' => 'screenshot1-thumb.jpg',
-                 ],
-                 'link' => 'https://globalgamejam.org/2017/games/poseidoom',
-                 'title' => 'Poseidoom'
-             ],
-    'godofchance' => [
-            'portfolio' => [
-                'screenshot1-large.gif' => 'screenshot1-thumb.jpg',
-            ],
-            'link' => 'https://arvz.itch.io/god-of-chance',
-            'title' => 'God of Chance'
+        'portfolio' => [
+            'screenshot1-large.gif' => 'screenshot1-thumb.gif',
         ],
+        'link' => 'https://arvz.itch.io/spaceship2077',
+        'title' => 'Spaceship Power Management Simulator 2077'
+    ],
+    'kcf' => [
+        'portfolio' => [
+            'screenshot1-large.gif' => 'screenshot1-thumb.png',
+        ],
+        'link' => 'https://globalgamejam.org/2022/games/kfc-krazy-frickin-chicken-7',
+        'title' => 'Krazy Chicken Frenzy'
+    ],
+    'poseidoom' => [
+        'portfolio' => [
+            'screenshot1-large.gif' => 'screenshot1-thumb.jpg',
+        ],
+        'link' => 'https://globalgamejam.org/2017/games/poseidoom',
+        'title' => 'Poseidoom'
+    ],
+    'godofchance' => [
+        'portfolio' => [
+            'screenshot1-large.gif' => 'screenshot1-thumb.jpg',
+        ],
+        'link' => 'https://arvz.itch.io/god-of-chance',
+        'title' => 'God of Chance'
+    ],
     'hotf' => [
         'portfolio' => [
             'screenshot1-large.png' => 'screenshot1-thumb.png',
@@ -155,8 +174,10 @@ $app->get('/', function () use ($app, $released, $gamejams) {
     // Render the index page
     echo $twig->render(
         'index.html.twig',
-        ['released' => $released,
-        'gamejams' => $gamejams]
+        [
+            'released' => $released,
+            'gamejams' => $gamejams
+        ]
     );
 });
 
